@@ -9,6 +9,7 @@ content - текст
 <head>
 	<meta http-equiv="content-type"; content="text/html; charset=windows-1251"> 
 	<title>ОСТС.Учет ВиОТ | <?php echo $title?></title>
+	<link rel="stylesheet" href="/templates/osts.css">
 </head>
 <body background="templates/Page-BgTexture.jpg">
 		
