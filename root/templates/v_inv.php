@@ -17,7 +17,7 @@ $har - характеристика техники
 NAIX - наименование х-ки
 XK - значение х-ки
 */?>
-<a href="index.php">Поиск по инвентарному номеру</a> | <a href="ceh.php">Выбор Цеха</a> | <a href="ceh.php?id=<?=$invent['CEX']?>">Просмотр <?=$invent['NAIM']?></a>
+<h2><a href="index.php">Поиск по инвентарному номеру</a> | <a href="ceh.php">Выбор Цеха</a> | <a href="ceh.php?id=<?=$invent['CEX']?>">Просмотр <?=$invent['NAIM']?></a></h2>
 <br><br>
 <hr width="100%">
 <h2 align="center" ><?=$invent['NAIT']?></h2>
@@ -46,7 +46,7 @@ XK - значение х-ки
 </table>
 
 
-	<a href="obsl.php?inv_obs=<?=$invent['INV']?>"><p align="center"><?=Обслуживание?></p></a>
+	<h2><a href="obsl.php?inv_obs=<?=$invent['INV']?>"><p align="center"><?=Обслуживание?></p></a></h2>
 
 <br><br>
 <hr width="100%">

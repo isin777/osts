@@ -5,7 +5,7 @@
 $obsl_inv - обслужив по инвентарному:
 
 */?>
-<a href="index.php">Поиск по инвентарному номеру</a> | Просмотр обслуживания | <a href="ceh.php?inv=<?=$_GET['inv_obs']?>">Х-ки <?=$_GET['inv_obs']?></a>
+<h2><a href="index.php">Поиск по инвентарному номеру</a> | Просмотр обслуживания | <a href="ceh.php?inv=<?=$_GET['inv_obs']?>">Х-ки <?=$_GET['inv_obs']?></a></h2>
 <br><br>
 <hr width="100%">
 

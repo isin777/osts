@@ -20,11 +20,9 @@ KOB - код объекта
 $nait_ceh - виды техники цеха
 
 */?>
-<a href="index.php">Поиск по инвентарному номеру</a> | <a href="ceh.php"><b><font color="blue">Выбор цеха</font></b></a>
-<br><br>
-
 <hr width="100%">
-<br>
+<h2><a href="index.php">Поиск по инвентарному номеру</a> | <a href="ceh.php">Выбор цеха</a></h2>
+<hr width="100%">
 
 <?//выводим подразделения?>
 <?php
@@ -73,7 +71,9 @@ if ($ob_ceh[0] == true)
 	echo ('</table>');
 }
 ?>
-<b>Количество единиц вычислительной и орг.техники:</b>&nbsp;&nbsp;&nbsp;-&nbsp;<?=(count($invent_ceh)-1)?><br/>
+<hr width="100%">
+<p>Количество единиц вычислительной и орг.техники:&nbsp;&nbsp;&nbsp;-&nbsp;<?=(count($invent_ceh)-1)?></p>
+
 <?php
 if ($ob_ceh[0] == false)
 {

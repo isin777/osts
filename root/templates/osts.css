@@ -1,4 +1,6 @@
 h1 {text-align:center; color:blue;}
+h2 {text-align:center;}
+p {text-align:center;}
 a {color: blue;/*font-weight: bold;*/}
 tr:hover {background-color: #fcf8e3;}
 td:hover {font-weight: bold;}
