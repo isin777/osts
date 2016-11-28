@@ -5,8 +5,8 @@
 $obsl_inv - обслужив по инвентарному:
 
 */?>
-<a href="index.php"><b><font color="blue">Поиск по инвентарному номеру</font></b></a> | <b>Просмотр обслуживания</b> | <a href="ceh.php?inv=<?=$_GET['inv_obs']?>"><font color="blue"><b>Х-ки <?=$_GET['inv_obs']?></b></font></a>
-<br/><br/>
+<a href="index.php">Поиск по инвентарному номеру</a> | Просмотр обслуживания | <a href="ceh.php?inv=<?=$_GET['inv_obs']?>">Х-ки <?=$_GET['inv_obs']?></a>
+<br><br>
 <hr width="100%">
 
 <table border="1" align="center" cellpadding="7" cellspacing="3">
@@ -20,5 +20,5 @@ $obsl_inv - обслужив по инвентарному:
 <?php endfor?>
 </table>
 
-<br/><br/>
+<br><br>
 <hr width="100%">

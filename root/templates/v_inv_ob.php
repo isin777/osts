@@ -19,20 +19,20 @@ KOB - код объекта
 
 $nait_ob - виды техники подразделения
 */?>
-<a href="index.php"><b>Поиск по инвентарному номеру</b></a> | <a href="ceh.php"><b>Выбор цеха</font></b></a>
-<br/><br/>
+<a href="index.php">Поиск по инвентарному номеру</a> | <a href="ceh.php">Выбор цеха</a>
+<br><br>
 <hr width="100%">
-<br/><br/>
+<br><br>
 
 <?//выводим подразделения?>
-<?php 
+<?php
 if ($ob_ceh[0] == true)
 {
-	
+
 	echo('
 	<table border="1" align="center" cellpadding="1" cellspacing="1">');
 		echo('
-	
+
 		<tr>');
 	if ($_GET['id'] == '95')
 	{
@@ -41,29 +41,29 @@ if ($ob_ceh[0] == true)
 		echo('<td><a href="ceh.php?id=' . $_GET['id'] . '&ob=' .$ob_ceh[$i]['KOB'].'">'.$ob_ceh[$i]['NAIO'].'</a></td>');
 		}
 		echo('</tr>');
-	
+
 		echo('<tr>');
 		for ($i=16; $i < (count($ob_ceh)-1); $i++)
 		{
 			echo('<td><a href="ceh.php?id=' . $_GET['id'] . '&ob=' .$ob_ceh[$i]['KOB'].'">'.$ob_ceh[$i]['NAIO'].'</a></td>');
 		}
 		echo('</tr>');
-		
-	
+
+
 	}
 	else
-	{	
+	{
 		for ($i=0; $i < (count($ob_ceh)-1); $i++)
 		{
 			echo('<td><a href="ceh.php?id=' . $_GET['id'] . '&ob=' .$ob_ceh[$i]['KOB'].'">'.$ob_ceh[$i]['NAIO'].'</a></td>');
 		}
 		echo('</tr>');
-		//выводим	ответственных 
+		//выводим	ответственных
 		echo('<tr>');
 		for ($i=0; $i < (count($ob_ceh)-1); $i++)
 		{
 			echo(
-				
+
 				'<td>' . $ob_ceh[$i]['FIOO'] . '</td>');
 		}
 	}
@@ -73,7 +73,7 @@ if ($ob_ceh[0] == true)
 	</table>');
 }
 ?>
-<br/>
+<br>
 <?//выводим виды техники подразделения?>
 <table border="1" align="center" cellpadding="3" cellspacing="1">
 <tr>
@@ -84,8 +84,8 @@ if ($ob_ceh[0] == true)
 <td><a href="ceh.php?id=<?=$_GET['id']?>&ob=<?=$_GET['ob']?>"><?='Вся техника'?>
 	</a></td>
 </tr>
-</table>	
-<br/>
+</table>
+<br>
 <b>Количество единиц вычислительной и орг.техники:</b>&nbsp;&nbsp;&nbsp;-&nbsp;<?=(count($invent_ob)-1)?><br/>
 <b>Ответственный за эксплуатацию:</b>&nbsp;&nbsp;<?=$ob_ceh[$_GET['ob']-1]['FIOO']?><br/>
 <?//выводим таблицу техники?>
@@ -100,5 +100,5 @@ if ($ob_ceh[0] == true)
 	<td>Год выпуска: <?=$invent_ob[$i]['GVP']?></td>
 </tr>
 <?php endfor?>
-<br/>
+<br>
 <hr width="100%">

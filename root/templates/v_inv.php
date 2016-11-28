@@ -15,10 +15,10 @@ GVP - Год выпуска
 
 $har - характеристика техники
 NAIX - наименование х-ки
-XK - значение х-ки 
+XK - значение х-ки
 */?>
-<a href="index.php"><font color="blue"><b>Поиск по инвентарному номеру</b></font></a> | <a href="ceh.php"><b><font color="blue">Выбор Цеха</font></b></a> | <a href="ceh.php?id=<?=$invent['CEX']?>"><b><font color="blue">Просмотр <?=$invent['NAIM']?></font></b></a>
-<br/><br/>
+<a href="index.php">Поиск по инвентарному номеру</a> | <a href="ceh.php">Выбор Цеха</a> | <a href="ceh.php?id=<?=$invent['CEX']?>">Просмотр <?=$invent['NAIM']?></a>
+<br><br>
 <hr width="100%">
 <h2 align="center" ><?=$invent['NAIT']?></h2>
 <hr width="100%">
@@ -46,9 +46,7 @@ XK - значение х-ки
 </table>
 
 
-	<a href="obsl.php?inv_obs=<?=$invent['INV']?>"><font color="blue"><p align="center"><b><?=Обслуживание?></b></p></font></a>
-	
-<br/><br/>
+	<a href="obsl.php?inv_obs=<?=$invent['INV']?>"><p align="center"><?=Обслуживание?></p></a>
+
+<br><br>
 <hr width="100%">
-
-
