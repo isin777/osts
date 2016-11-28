@@ -4,16 +4,18 @@
 title - заголовок
 content - текст
 */?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="content-type"; content="text/html; charset=windows-1251"> 
+	<meta http-equiv="content-type"; charset="windows-1251">
+	<meta name="keywords" content="ПК, принтеры, МФУ" >
+	<meta name="description" content="База ПК ОСТС">
 	<title>ОСТС.Учет ВиОТ | <?php echo $title?></title>
 	<link rel="stylesheet" href="/templates/osts.css">
 </head>
 <body background="templates/Page-BgTexture.jpg">
 		
-	<h1 align="center"><font color="blue"><?php echo $title;?></font></h1>
+	<h1><?php echo $title;?></h1>
 	<?php echo $content;?>
 </body>
 </html>
