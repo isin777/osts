@@ -1,6 +1,29 @@
-h1 {text-align:center; color:blue;}
-h2 {text-align:center;}
-p {text-align:center;}
-a {color: blue;/*font-weight: bold;*/}
-tr:hover {background-color: #fcf8e3;}
-td:hover {font-weight: bold;}
+h1 {text-align:center;
+   color:black;
+ }
+h2 {text-align:center;
+}
+p {text-align:center;
+}
+a {color: blue;}
+/*font-weight: bold;*/
+}
+table {
+  /*border: 1px solid black;*/
+  border-collapse: separate;
+  border-spacing: 2px;
+  text-align: center;
+
+}
+td {
+  border: 1px solid gray;
+  padding: 10px;
+
+}
+tr:hover {background-color: #fcf8e3;
+}
+td:hover {
+  color: green;
+}
+
+/*border="1" align="center" cellpadding="5" cellspacing="3"*/

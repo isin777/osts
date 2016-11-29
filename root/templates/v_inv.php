@@ -23,7 +23,7 @@ XK - значение х-ки
 <h2 align="center" ><?=$invent['NAIT']?></h2>
 <hr width="100%">
 <h4 align="center">Инвентарный номер: <?=$invent['INV']?></h4>
-<table border="1" align="center" cellpadding="10" cellspacing="5">
+<table >
 <tr>
 	<td>Цех: <?=$invent['CEX']?> <?=$invent['NAIM']?></td>
 	<td>Подразделение: <?=$invent['NAIO']?></td>
@@ -36,7 +36,7 @@ XK - значение х-ки
 </tr>
 </table>
 <h4 align="center">Характеристики</h4>
-<table border="1" align="center" cellpadding="10" cellspacing="5">
+<table>
 <?php for ($i = 0; $i < (count($har)-1); $i++): ?>
 	<tr>
 		<td><?=$har[$i]['NAIX']?></td>

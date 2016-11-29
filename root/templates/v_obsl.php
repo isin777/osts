@@ -9,7 +9,7 @@ $obsl_inv - обслужив по инвентарному:
 <br><br>
 <hr width="100%">
 
-<table border="1" align="center" cellpadding="7" cellspacing="3">
+<table>
 <?php for ($i=0; $i < (count($obsl_inv)-1); $i++): ?>
 <tr>
 	<td>Дата: <?=$obsl_inv[$i]['DT1']?></td>

@@ -30,7 +30,7 @@ if ($ob_ceh[0] == true)
 {
 
 	echo('
-	<table border="1" align="center" cellpadding="1" cellspacing="1">');
+	<table >');
 		echo('
 
 		<tr>');
@@ -75,7 +75,7 @@ if ($ob_ceh[0] == true)
 ?>
 <br>
 <?//выводим виды техники подразделени€?>
-<table border="1" align="center" cellpadding="3" cellspacing="1">
+<table >
 <tr>
 <?php for ($i=0; $i < (count($nait_ob)-1); $i++): ?>
 <td><a href="ceh.php?nait=<?=$nait_ob[$i]['KODT']?>&id=<?=$_GET['id']?>&ob=<?=$_GET['ob']?>"><?=$nait_ob[$i]['NAIT']?>
@@ -89,7 +89,7 @@ if ($ob_ceh[0] == true)
 <b> оличество единиц вычислительной и орг.техники:</b>&nbsp;&nbsp;&nbsp;-&nbsp;<?=(count($invent_ob)-1)?><br/>
 <b>ќтветственный за эксплуатацию:</b>&nbsp;&nbsp;<?=$ob_ceh[$_GET['ob']-1]['FIOO']?><br/>
 <?//выводим таблицу техники?>
-<table border="1" align="center" cellpadding="7" cellspacing="3">
+<table >
 <?php for ($i=0; $i < (count($invent_ob)-1); $i++): ?>
  <tr>
 	<td><a href="ceh.php?inv=<?=$invent_ob[$i]['INV']?>"><?=$invent_ob[$i]['INV']?>

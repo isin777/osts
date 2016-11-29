@@ -30,7 +30,7 @@ if ($ob_ceh[0] == true)
 {
 
 	echo('
-	<table border="1" align="center" cellpadding="1" cellspacing="1">');
+	<table >');
 		echo('
 
 		<tr>');
@@ -82,7 +82,7 @@ echo('<b>Ответственный за эксплуатацию:</b>&nbsp;&nbsp;' . $invent_ceh[0]['FIOC'
 ?>
 <br/>
 <?//выводим виды техники цеха?>
-<table border="1" align="center" cellpadding="3" cellspacing="1">
+<table>
 <tr>
 <?php for ($i=0; $i < (count($nait_ceh)-1); $i++): ?>
 <td><a href="ceh.php?nait=<?=$nait_ceh[$i]['KODT']?>&id=<?=$_GET['id']?>"><?=$nait_ceh[$i]['NAIT']?>
@@ -95,7 +95,7 @@ echo('<b>Ответственный за эксплуатацию:</b>&nbsp;&nbsp;' . $invent_ceh[0]['FIOC'
 </table>
 <br>
 <?//выводим перечень техники?>
-<table border="1" align="center" cellpadding="5" cellspacing="3">
+<table>
 <tr>
 	<td>Инвентарный номер:</td>
 	<td>Вид техники:</td>
