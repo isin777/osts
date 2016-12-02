@@ -72,8 +72,6 @@ if ($ob_ceh[0] == true)
 }
 ?>
 <hr width="100%">
-<p>Количество единиц вычислительной и орг.техники:&nbsp;&nbsp;&nbsp;-&nbsp;<?=(count($invent_ceh)-1)?></p>
-
 <?php
 if ($ob_ceh[0] == false)
 {
@@ -86,7 +84,7 @@ echo('<b>Ответственный за эксплуатацию:</b>&nbsp;&nbsp;' . $invent_ceh[0]['FIOC'
 <tr>
 <?php for ($i=0; $i < (count($nait_ceh)-1); $i++): ?>
 <td><a href="ceh.php?nait=<?=$nait_ceh[$i]['KODT']?>&id=<?=$_GET['id']?>"><?=$nait_ceh[$i]['NAIT']?>
-	</a></td>
+</a></td>
 <?php endfor?>
 
 <td><a href="ceh.php?id=<?=$_GET['id']?>"><?='Вся техника'?>
@@ -94,6 +92,9 @@ echo('<b>Ответственный за эксплуатацию:</b>&nbsp;&nbsp;' . $invent_ceh[0]['FIOC'
 </tr>
 </table>
 <br>
+
+<p>Количество единиц вычислительной и орг.техники :&nbsp;&nbsp;&nbsp;-&nbsp;<?=(count($invent_ceh)-1)?></p>
+
 <?//выводим перечень техники?>
 <table>
 <tr>
